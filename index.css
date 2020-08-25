@@ -1,0 +1,114 @@
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap');
+
+body{
+  background: rgb(238, 204, 204) fixed; 
+  font-family: 'Montserrat', sans-serif;
+  }
+
+/*moving ready set go text*/
+
+div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-size:120px;
+    letter-spacing:0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 
+              8px 8px rgb(96, 111, 196),
+              20px 20px rgb(244, 237, 63);
+  }
+
+p:hover {
+  text-decoration: none; 
+  font-size: 150px;
+  transition: all 500ms;
+  font-size-adjust: 30px;
+}
+
+span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+  }
+  
+@keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+
+  /*welcome to BPM text*/
+
+
+h1 {
+    font-family: 'Londrina Outline', cursive;
+    font-size: 70px;
+    color: #bf493e;
+    padding: 100px 50px 100px 300px;
+    background-repeat: no-repeat;
+    background-image: url(skate.gif);
+    background-position: left;
+    background-size: contain;
+}
+
+/*dot dot dot animation*/
+
+.loading:after {
+    content: ' .';
+    animation: dots 2s steps(5, end) infinite;}
+  
+@keyframes dots {
+  0%, 20% {
+    color: white;
+    text-shadow:
+    .25em 0 0 white,
+    .5em 0 0 white;}
+  40% {
+    color: #bf493e;
+    text-shadow:
+    .25em 0 0 white,
+    .5em 0 0 white;}
+  60% {
+    text-shadow:
+    .25em 0 0 #bf493e,
+    .5em 0 0 white;}
+  80%, 100% {
+    text-shadow:
+    .25em 0 0 #bf493e,
+    .5em 0 0 #bf493e;}}
+
+/*footer*/
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 60%;
+  height: 30px;
+  font-family: 'Fredericka the Great', cursive;
+  padding: 10px 5px 5px 5px;
+  color: #da7a72;;
+  margin: 5px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+a {
+  color: #da7a72;;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(102, 9, 9);
+  text-decoration: none; 
+  font-size: 18px;
+  transition: all 500ms;
+  font-size-adjust: 3px;
+}
+
